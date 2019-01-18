@@ -34,7 +34,6 @@ Array.prototype.myFilter = function(callbackFunction = false) {
                 if (callbackFunction(this[i], i, this)) {
                     filtered.push(this[i]);
                 }
-                break;
         }
     }
     return filtered;
