@@ -4,11 +4,7 @@ function isFunction(func) {
 
 Array.prototype.myMap = function(callbackFunction = false) {
 
-    if (callbackFunction === false) {
-        console.error('Invalid parameters!');
-        return 'Invalid parameters!';
-    }
-    else if (isFunction(callbackFunction) !== true) {
+    if (isFunction(callbackFunction) !== true) {
         console.error('You must provide an argument that is a callback function!');
         return 'You must provide an argument that is a callback function!';
     } else if (callbackFunction.length > 3) {
@@ -16,31 +12,14 @@ Array.prototype.myMap = function(callbackFunction = false) {
         return 'Your callback function has too many parameters';
     }
 
-    const paramNum = callbackFunction.length;
-    const filtered = [];
+    const mapped = [];
     for (let i = 0; i < this.length; i++) {
-        let result;
-        switch (paramNum) {
-            case 1:
-                result = callbackFunction(this[i]);
-                if (result) {
-                    filtered.push(result);
-                }
-                break;
-            case 2:
-                result = callbackFunction(this[i], i);
-                if (result) {
-                    filtered.push(result);
-                }
-                break;
-            case 3:
-                result = callbackFunction(this[i], i);
-                if (result) {
-                    filtered.push(result);
-                }
+        let result = callbackFunction(this[i], i);
+        if (result) {
+            mapped.push(result);
         }
     }
-    return filtered;
+    return mapped;
 };
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];

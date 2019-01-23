@@ -4,11 +4,7 @@ function isFunction(func) {
 
 Array.prototype.myFilter = function(callbackFunction = false) {
 
-    if (callbackFunction === false) {
-        console.error('Invalid parameters!');
-        return 'Invalid parameters!';
-    }
-    else if (isFunction(callbackFunction) !== true) {
+    if (isFunction(callbackFunction) !== true) {
         console.error('You must provide an argument that is a callback function!');
         return 'You must provide an argument that is a callback function!';
     } else if (callbackFunction.length > 3) {
@@ -16,24 +12,10 @@ Array.prototype.myFilter = function(callbackFunction = false) {
         return 'Your callback function has too many parameters';
     }
 
-    const paramNum = callbackFunction.length;
     const filtered = [];
     for (let i = 0; i < this.length; i++) {
-        switch (paramNum) {
-            case 1:
-                if (callbackFunction(this[i])) {
-                    filtered.push(this[i]);
-                }
-                break;
-            case 2:
-                if (callbackFunction(this[i], i)) {
-                    filtered.push(this[i]);
-                }
-                break;
-            case 3:
-                if (callbackFunction(this[i], i, this)) {
-                    filtered.push(this[i]);
-                }
+        if (callbackFunction(this[i], i, this)) {
+            filtered.push(this[i]);
         }
     }
     return filtered;

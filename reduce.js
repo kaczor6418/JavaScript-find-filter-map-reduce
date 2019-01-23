@@ -14,29 +14,8 @@ Array.prototype.myReduce = function(callbackFunction, initializationStructure) {
         initializationStructure = this[0].constructor();
     }
 
-    const paramNum = callbackFunction.length;
     for (let i = 0; i < this.length; i++) {
-        switch (paramNum) {
-            case 1:
-                if (callbackFunction(initializationStructure)) {
-                    initializationStructure = callbackFunction(initializationStructure);
-                }
-                break;
-            case 2:
-                if (callbackFunction(initializationStructure, this[i])) {
-                    initializationStructure = callbackFunction(initializationStructure, this[i]);
-                }
-                break;
-            case 3:
-                if (callbackFunction(initializationStructure, this[i], i)) {
-                    initializationStructure = callbackFunction(initializationStructure, this[i], i);
-                }
-                break;
-            case 4:
-                if (callbackFunction(initializationStructure, this[i], i, this)) {
-                    initializationStructure = initializationStructure = callbackFunction(initializationStructure, this[i], i);
-                }
-        }
+        initializationStructure = callbackFunction(initializationStructure, this[i], i, this);
     }
     return initializationStructure;
 
@@ -46,9 +25,9 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const sumOfNumbers = numbers.reduce( (acc, cur) => {
     return acc + cur;
 });
-console.log(sumOfNumbers);
+console.log('.reduce result: ', sumOfNumbers);
 
 const mySumOfNumbers = numbers.myReduce( (acc, cur) => {
     return acc + cur;
 });
-console.log(mySumOfNumbers);
+console.log('.myReduce result: ',mySumOfNumbers);

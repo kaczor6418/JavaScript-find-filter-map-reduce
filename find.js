@@ -4,11 +4,7 @@ function isFunction(func) {
 
 Array.prototype.myFind = function(callbackFunction = false) {
 
-    if (callbackFunction === false) {
-        console.error('Invalid parameters!');
-        return 'Invalid parameters!';
-    }
-    else if (isFunction(callbackFunction) !== true) {
+    if (isFunction(callbackFunction) !== true) {
         console.error('You must provide an argument that is a callback function!');
         return 'You must provide an argument that is a callback function!';
     } else if (callbackFunction.length > 1) {
