@@ -27,7 +27,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const evenNumber = numbers.find( number => number % 2 === 0 );
 console.log(evenNumber); // 2
 ```
-*[My implementation]*(https://github.com/kaczor6418/JavaScript-find-filter-map-reduce/blob/master/js/find.js)
+[*My implementation*](https://github.com/kaczor6418/JavaScript-find-filter-map-reduce/blob/master/js/find.js)
 ### .filter
 
 - It is a method which task is filtering arrays
@@ -44,7 +44,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const evenNumbers = numbers.filter( number => number % 2 === 0 );
 console.log(evenNumbers); // (4) [2, 4, 6, 8]
 ```
-*[My implementation]*(https://github.com/kaczor6418/JavaScript-find-filter-map-reduce/blob/master/js/filter.js)
+[*My implementation*](https://github.com/kaczor6418/JavaScript-find-filter-map-reduce/blob/master/js/filter.js)
 ### .map
 
 - It is a method which task is modify arrays
@@ -61,7 +61,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const onlyEvenNumbers = numbers.map( number => number * 2);
 console.log(onlyEvenNumbers); // (9) [2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
-*[My implementation]*(https://github.com/kaczor6418/JavaScript-find-filter-map-reduce/blob/master/js/map.js)
+[*My implementation*](https://github.com/kaczor6418/JavaScript-find-filter-map-reduce/blob/master/js/map.js)
 ### .reduce
 
 - It is a method which task is reducing arrays
@@ -81,7 +81,7 @@ const sumOfNumbers = numbers.reduce( (acc, cur) => {
 });
 console.log(sumOfNumbers); // 45
 ```
-*[My implementation]*(https://github.com/kaczor6418/JavaScript-find-filter-map-reduce/blob/master/js/reduce.js)
+[*My implementation*](https://github.com/kaczor6418/JavaScript-find-filter-map-reduce/blob/master/js/reduce.js)
 
 ## Built With
 
