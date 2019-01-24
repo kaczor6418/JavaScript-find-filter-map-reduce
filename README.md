@@ -93,3 +93,4 @@ console.log(sumOfNumbers);
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/kaczor6418/filter-find-map-reduce-JavaScript-/blob/master/LICENSE) file for details
+
