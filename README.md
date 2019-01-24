@@ -24,8 +24,8 @@ Google Chrome, node.js, karma, karma-cli
   
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const evenNumbers = numbers.filter( number => number % 2 === 0 );
-console.log(evenNumbers);
+const evenNumber = numbers.find( number => number % 2 === 0 );
+console.log(evenNumber); // 2
 ```
 ### .filter
 
@@ -40,8 +40,8 @@ console.log(evenNumbers);
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const evenNumber = numbers.find( number => number % 2 === 0 );
-console.log(evenNumber);
+const evenNumbers = numbers.filter( number => number % 2 === 0 );
+console.log(evenNumbers); // (4) [2, 4, 6, 8]
 ```
 ### .map
 
@@ -57,7 +57,7 @@ console.log(evenNumber);
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const onlyEvenNumbers = numbers.map( number => number * 2);
-console.log(onlyEvenNumbers);
+console.log(onlyEvenNumbers); // (9) [2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
 ### .reduce
 
@@ -76,7 +76,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const sumOfNumbers = numbers.reduce( (acc, cur) => {
     return acc + cur;
 });
-console.log(sumOfNumbers);
+console.log(sumOfNumbers); // 45
 ```
 
 ## Built With
