@@ -1,0 +1,30 @@
+{
+  "name": "filter-find-map-reduce-javascript-",
+  "version": "1.0.0",
+  "description": "My own javaScript implementation of those functions",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaczor6418/filter-find-map-reduce-JavaScript-.git"
+  },
+  "author": "krzysztof kaczynski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaczor6418/filter-find-map-reduce-JavaScript-/issues"
+  },
+  "homepage": "https://github.com/kaczor6418/filter-find-map-reduce-JavaScript-#readme",
+  "dependencies": {
+    "karma": "^4.0.0",
+    "karma-cli": "^2.0.0"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1"
+  }
+}
