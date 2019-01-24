@@ -34,7 +34,7 @@ console.log(evenNumber); // 2
 - .filter returns array with elements that fits filtering rules
 - if array does not contain any element that fits conditions, .filter will return empty array
 - .filter does not modify the original array
-- .filter accepts callBack function as parameter which adopts 3 parameter :
+- .filter accepts callBack function as parameter which adopts 3 parameters :
      - cur -> current element of array
      - idx -> index of current element
      - src -> parent element of current element
@@ -51,7 +51,7 @@ console.log(evenNumbers); // (4) [2, 4, 6, 8]
 - .map returns array of modified elements
 - if array does not contain any element that fits conditions, .map will return undefined
 - .map does not modify the original array
-- .map accepts callBack function as parameter which adopts 3 parameter :
+- .map accepts callBack function as parameter which adopts 3 parameters :
      - cur -> current element of array
      - idx -> index of current element
      - src -> parent element of current element
@@ -68,7 +68,7 @@ console.log(onlyEvenNumbers); // (9) [2, 4, 6, 8, 10, 12, 14, 16, 18]
 - .reduce returns structure(array, object, sting, list, set ...) of reduced elements
 - if array does not contain any element that should be reduced, .reduce will return undefined
 - .reduce does not modify the original array
-- .reduce accepts callBack function as parameter which adopts 4 parameter and initialization structure :
+- .reduce accepts callBack function as parameter which adopts 4 parameters and initialization structure :
      - acc -> accumulator of whole previous elements saved in initial structure
      - cur -> current element of array
      - idx -> index of current element
