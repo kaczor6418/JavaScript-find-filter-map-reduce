@@ -85,7 +85,7 @@ console.log(sumOfNumbers); // 45
 
 ## Built With
 
-* [Vanilla JavaScript](https://www.javascript.com/)
+* [Vanilla JavaScript](https://www.javascript.com/) - the programming language of HTML and the Web
 * [Node.js](https://nodejs.org/en/) - is an open source server environment
 * [Jasmine](https://jasmine.github.io/) - JavaScript unit testing framework
 
